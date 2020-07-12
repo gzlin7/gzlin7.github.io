@@ -1,0 +1,43 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    color: black;
+  }
+
+.navbar-brand{
+    float: left;
+  }
+
+a {
+    color: #FA7268; 
+}
+
+a:hover {
+  color: #34d4ae; 
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #ffe3e3;
+    z-index: 999;
+  }
+
+.container-fluid {
+    margin: 0 5% 5% 5%;
+    color: black;
+  }
+
+  .date {
+    color: #ff7360;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .images {
+    text-align: center;
+  }

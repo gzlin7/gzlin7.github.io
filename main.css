@@ -41,3 +41,196 @@ a:hover {
   .images {
     text-align: center;
   }
+
+  .main-page {
+    width: 90%;
+  }
+
+  .nav-link {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-right: 1vw;
+    padding: 0px;
+  }
+
+  .nav-link:hover {
+    color: #FA7268 !important;
+  }
+
+  .bio {
+    padding-left: 5%;
+  }
+
+  .hello {
+    padding: 0px;
+  }
+
+  .hello-gif {
+    width: 100%;
+    border-radius: 400px;
+  }
+
+  .name {
+    font-size: 8vw;
+    color: #FA7268;
+  }
+
+  .title {
+    font-size: 3vw;
+    color: #FA7268;
+    font-weight: bold;
+  }
+
+  .proj-title {
+    font-size: 2.5vw;
+    color: #FA7268;
+    font-weight: bold;
+  }
+
+  .project-odd {
+    padding: 2%;
+
+  }
+
+  .project-even {
+    background-color: #ffe3e3;
+    padding: 2%;
+  }
+
+  .art {
+    padding: 10px;
+  }
+
+  .art img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .art:hover .art-titles {
+    display: block;
+    cursor: pointer;
+  }
+
+  .art:hover img {
+    cursor: pointer;
+    opacity: 0.1;
+  }
+
+  .art-titles {
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: #FA7268;
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    margin: auto;
+    width: 98%;
+    display: none;
+    text-align: center;
+  }
+
+  .btn {
+    background-color: FA7268;
+    color: white;
+    font-weight: bold;
+  }
+
+  .btn:hover {
+    background-color: #34d4ae;
+    color: white;
+    font-weight: bold;
+  }
+
+  .mobile-warn {
+    padding-left: 5%;
+    color: #FA7268;
+    font-weight: bold;
+    font-size: small;
+    display: none;
+  }
+
+  iframe {
+    width: 100%;
+    height: 90%
+  }
+
+  footer {
+    text-align: center;
+    background-color: #ffe3e3;
+  }
+
+  object {
+    width: 100%;
+    height: calc(75vh);
+  }
+
+  .modal-dialog {
+    top: 5%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .modal-content {
+    width: calc(80vw);
+    display: inline-block;
+  }
+
+  .modal-body {
+    padding-top: 0px;
+  }
+
+  .close {
+    font-size: 56px;
+    line-height: 40px;
+  }
+
+  #intro {
+    margin-top: 0px;
+  }
+
+  .art-desc {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  @media only screen and (max-width: 765px) {
+    .mobile-warn {
+      display: inline-block;
+    }
+
+    .btn {
+      padding: 5px;
+    }
+
+    .bio,
+    body {
+      font-size: large;
+    }
+
+    .title {
+      font-size: x-large;
+    }
+
+    .proj-title {
+      font-size: large;
+    }
+
+    .name {
+      font-size: xx-large;
+    }
+
+    .nav-link {
+      font-size: large;
+      font-weight: bold;
+      margin: 2px;
+    }
+
+    .art {
+      padding: 0;
+    }
+
+    .proj-desc {
+      display: none;
+    }
+  }

@@ -233,4 +233,13 @@ a:hover {
     .proj-desc {
       display: none;
     }
+
+    .modal-dialog {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .modal-content {
+      width: calc(90vw);
+    }
   }

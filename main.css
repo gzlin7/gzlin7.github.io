@@ -15,6 +15,7 @@ a {
 }
 
 a:hover {
+  transition-duration: 0.7s;
   color: #34d4ae; 
 }
 
@@ -116,11 +117,13 @@ a:hover {
   .art:hover .art-titles {
     display: block;
     cursor: pointer;
+    transition-duration: 0.3s;
   }
 
   .art:hover img {
     cursor: pointer;
     opacity: 0.1;
+    transition-duration: 0.3s;
   }
 
   .art-titles {
@@ -183,6 +186,7 @@ a:hover {
   .modal-content {
     width: calc(80vw);
     display: inline-block;
+    overflow-x: hidden;
   }
 
   .modal-body {

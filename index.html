@@ -39,9 +39,9 @@
         <li class="nav-item"><a class="nav-link" href="#projects">
             Projects
           </a></li>
-        <li class="nav-item"><a class="nav-link" href="#writing">
+        <!-- <li class="nav-item"><a class="nav-link" href="#writing">
             Writing
-          </a></li>
+          </a></li> -->
         <li class="nav-item"><a class="nav-link" href="./GloriaLinAug2020.pdf">
             Resume
           </a></li>
@@ -57,11 +57,11 @@
       </div>
       <div class="col-sm-9 bio">
         <div class="name">Gloria Lin</div>
-        <div style="text-align: left; padding-left:2%; font-family: 'Raleway', sans-serif;">
-          Artist + Developer + Student <br>
+        <div style="text-align: left; padding-left:1%; font-family: 'Raleway', sans-serif;">
+          Artist + Developer <br>
           MIT SB 2021 | MEng <br>
-          <a href="https://www.linkedin.com/in/gloriazlin/" target="li"><i class="fa fa-lg fa-linkedin-square"></i></a>
           <a href="mailto:gzlin@mit.edu" target="mail"><i class="fa fa-lg fa-envelope-square"></i></a>
+          <a href="https://www.linkedin.com/in/gloriazlin/" target="li"><i class="fa fa-lg fa-linkedin-square"></i></a>
           <a href="https://github.com/gzlin7" target="gh"><i class="fa fa-lg fa-github-square"></i></a>
           <a href="https://www.facebook.com/gl0ria.lin" target="fb"><i class="fa fa-lg fa-facebook-square"></i></a>
           <a href="https://www.instagram.com/igloramus/" target="ig"><i class="fa fa-lg fa-instagram"></i></a>
@@ -86,7 +86,7 @@
     <hr>
 
     <!-- ART -->
-    <p><span class="title">Art | </span> Click or tap twice on a piece to learn more! </p>
+    <p><span class="title">Art | </span> Click or double tap on a piece to learn more </p>
     <br>
     <div class="row">
       <div class="col-4 art" id="craneDancer">
@@ -155,7 +155,7 @@
     <hr>
 
     <!-- PROJECTS -->
-    <p><span class="title">Projects | </span>Hacks and more.</p>
+    <p><span class="title">Projects | </span>Hacks and more</p>
     <br>
     <div class="row project-odd">
       <div class="col-6">
@@ -257,80 +257,80 @@
         </div>
       </div>
     </div>
-    <a name="writing"></a>
-    <hr>
+    <!-- <a name="writing"></a>
+    <hr> -->
 
     <!-- WRITING -->
-    <div class="writing">
+    <!-- <div class="writing">
       <p><span class="title">Writing | </span>Thoughts manifested occasionally.</p>
 
       <a href="https://thetech.com/2020/03/05/body-text-review" target="tt">Bezos, Bodies, and Backprop</a>- exhibition
       review of BODY TEXT
     </div>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br> -->
   </div>
 
-  <footer>
-    <br>
-    Made with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i><br>
-    Gloria Lin |
-    <a href="https://www.linkedin.com/in/gloriazlin/" target="li"><i class="fa fa-lg fa-linkedin-square"></i></a>
-    <a href="mailto:gzlin@mit.edu" target="mail"><i class="fa fa-lg fa-envelope-square"></i></a>
-    <a href="https://github.com/gzlin7" target="gh"><i class="fa fa-lg fa-github-square"></i></a>
-    <a href="https://www.facebook.com/gl0ria.lin" target="fb"><i class="fa fa-lg fa-facebook-square"></i></a>
-    <a href="https://www.instagram.com/igloramus/" target="ig"><i class="fa fa-lg fa-instagram"></i></a>
-    <br><br>
-  </footer>
+    <footer>
+      <br>
+      Made with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i><br>
+      Gloria Lin |
+      <a href="https://www.linkedin.com/in/gloriazlin/" target="li"><i class="fa fa-lg fa-linkedin-square"></i></a>
+      <a href="mailto:gzlin@mit.edu" target="mail"><i class="fa fa-lg fa-envelope-square"></i></a>
+      <a href="https://github.com/gzlin7" target="gh"><i class="fa fa-lg fa-github-square"></i></a>
+      <a href="https://www.facebook.com/gl0ria.lin" target="fb"><i class="fa fa-lg fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/igloramus/" target="ig"><i class="fa fa-lg fa-instagram"></i></a>
+      <br><br>
+    </footer>
 
-  <div class="modal fade" id="intromodal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <div id="intro"></div>
+    <div class="modal fade" id="intromodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div id="intro"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    var isMobile = navigator.userAgent.match(/(Android|webOS|iPhone|iPad|BlackBerry|Windows Phone)/i) ? true : false;
-    var selectedImgSrc = null;
+    <script>
+      var isMobile = navigator.userAgent.match(/(Android|webOS|iPhone|iPad|BlackBerry|Windows Phone)/i) ? true : false;
+      var selectedImgSrc = null;
 
-    $(document).ready(function () {
-      resizearts();
-    });
+      $(document).ready(function () {
+        resizearts();
+      });
 
-    $(window).resize(function () {
-      resizearts();
-    });
+      $(window).resize(function () {
+        resizearts();
+      });
 
-    // keep images square
-    function resizearts() {
-      let width = $('.art').width();
-      $('.art').height(width);
-    }
-
-    function popIntro(target) {
-      // load text to got with art
-      $('#intro').html('<object type="text/html" data="./descriptions/' + target.id + '.html" ></object>');
-      $('#intromodal').modal('show');
-    }
-
-    $('.art').on('click', function () {
-      let src = $(this).find('img').attr('src');
-
-      if (isMobile) {
-        // mobile device show Viewer only on 2nd click
-        if (selectedImgSrc != src) {
-          selectedImgSrc = src;
-          return;
-        }
+      // keep images square
+      function resizearts() {
+        let width = $('.art').width();
+        $('.art').height(width);
       }
 
-      popIntro(this);
-    });
-  </script>
+      function popIntro(target) {
+        // load text to got with art
+        $('#intro').html('<object type="text/html" data="./descriptions/' + target.id + '.html" ></object>');
+        $('#intromodal').modal('show');
+      }
+
+      $('.art').on('click', function () {
+        let src = $(this).find('img').attr('src');
+
+        if (isMobile) {
+          // mobile device show Viewer only on 2nd click
+          if (selectedImgSrc != src) {
+            selectedImgSrc = src;
+            return;
+          }
+        }
+
+        popIntro(this);
+      });
+    </script>
 
 </body>
 

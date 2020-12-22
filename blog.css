@@ -20,7 +20,7 @@ a {
 }
 
 img {
-  width: 100%;
+  text-align: center;
 }
 
 a:hover {
@@ -42,8 +42,11 @@ a:hover {
     max-width: max(70%, 1000px);
   }
 
-  .date {
-    color: #ff7360;
+  .caption {
+    font-family: 'Roboto', sans-serif;
+    font-size: max(16px, 1vw);
+    text-align: center;
+    font-style: italic;
   }
 
   .italic {
@@ -102,7 +105,15 @@ a:hover {
   }
 
   .subheading {
-    font-size: vw;
+    font-size: max(24px,2vw);
+    color: #FA7268;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+  }
+
+  .subsubheading {
+    font-size: max(18px,1.5vw);
     color: #FA7268;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;

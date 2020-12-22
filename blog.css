@@ -19,6 +19,10 @@ a {
     color: #FA7268; 
 }
 
+img {
+  width: 100%;
+}
+
 a:hover {
   transition-duration: 0.7s;
   color: #34d4ae; 
@@ -97,70 +101,18 @@ a:hover {
     text-align: left;
   }
 
-  .proj-title {
-    font-size: 2.5vw;
+  .subheading {
+    font-size: vw;
     color: #FA7268;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     text-align: left;
   }
 
-  .project-odd {
-    padding: 2%;
-
-  }
-
-  .project-even {
-    background-color: #ffe3e3;
-    padding: 2%;
-  }
-
-  .art {
-    padding: 10px;
-  }
-
-  .art img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .art:hover .art-titles {
-    display: block;
-    cursor: pointer;
-    transition-duration: 0.3s;
-  }
-
-  .art:hover img {
-    opacity: 0.1;
-    cursor: pointer;
-    transition-duration: 0.3s;
-  }
-
-  .art-titles {
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 2.5vw;
-    color: #FA7268;
-    position: absolute;
-    top: 30%;
-    left: 5px;
-    margin: auto;
-    width: 98%;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    display: none;
-  }
-
-  .btn {
-    background-color: FA7268;
-    color: white;
-    font-weight: bold;
-  }
-
-  .btn:hover {
-    background-color: #34d4ae;
-    color: white;
-    font-weight: bold;
+  .blog-post {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: max(16px, 1vw);
   }
 
   iframe {
@@ -173,53 +125,13 @@ a:hover {
     background-color: #ffe3e3;
   }
 
-  object {
-    width: 100%;
-    height: calc(75vh);
-  }
-
-  .modal-dialog {
-    top: 5%;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .modal-content {
-    width: calc(80vw);
-    display: inline-block;
-    overflow-x: hidden;
-  }
-
-  .modal-body {
-    padding-top: 0px;
-  }
-
-  .close {
-    font-size: 56px;
-    line-height: 40px;
-  }
-
+  
   #intro {
     margin-top: 0px;
   }
 
-  .art-desc {
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .proj-desc {
-    font-family: 'Roboto', sans-serif;
-    font-size: max(20px, 1vw);
-    text-align: left;
-  }
-
   nav {
     text-align: left !important;
-  }
-
-  .writing {
-    text-align: left;
   }
 
   @media only screen and (max-width: 765px) {
@@ -227,20 +139,19 @@ a:hover {
       max-width: 90%;
     }
 
-    .btn {
-      padding: 5px;
-    }
-
-    .bio,
     body {
       font-size: large;
+    }
+
+    .btn {
+      padding: 5px;
     }
 
     .title {
       font-size: x-large;
     }
 
-    .proj-title {
+    .subheading {
       font-size: large;
     }
 
@@ -252,22 +163,5 @@ a:hover {
       font-size: large;
       font-weight: bold;
       margin: 2px;
-    }
-
-    .art {
-      padding: 0;
-    }
-
-    .proj-desc {
-      display: none;
-    }
-
-    .modal-dialog {
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-  
-    .modal-content {
-      width: calc(90vw);
     }
   }

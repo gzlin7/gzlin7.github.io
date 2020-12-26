@@ -157,11 +157,25 @@
 
     <!-- BLOG -->
     <div class="writing">
-      <p><span class="title">Blog | </span>Thoughts manifested occasionally. Sometimes insightful, sometimes
-        indulgent.</p>
-      <a href="https://thetech.com/2020/03/05/body-text-review" target="tt">Bezos, Bodies, and Backprop</a>- exhibition
-      review of BODY TEXT <br>
-      <a href="speedrun.html">Speedrunning College</a>- advice + reflections on MIT and graduating early
+      <p><span class="title">Blog | </span>Thoughts manifested occasionally.</p>
+      <div class="row">
+        <!-- dates -->
+        <div class="col-2">
+          Dec 2020 <br>
+          <!-- Dec 2020 <br>
+          Nov 2020<br> -->
+          Mar 2020<br>
+        </div>
+        <!-- titles -->
+        <div class="col-10">
+          <a href="speedrun.html">Speedrunning College</a>- advice + reflections on MIT and graduating early <br>
+          <!-- <a href="mturkey.html">MTurkey for Thanksgiving</a>- baby's first cognitive science experiment<br>
+          <a href="mturkey.html">Paint by Numbers</a>- fun with non-photorealistic rendering<br> -->
+          <a href="https://thetech.com/2020/03/05/body-text-review" target="tt">Bezos, Bodies, and Backprop</a>-
+          exhibition
+          review of BODY TEXT <br>
+        </div>
+      </div>
     </div>
     <br><br><br>
     <a name="projects"></a>
@@ -169,7 +183,67 @@
     <hr>
 
     <!-- PROJECTS -->
-    <p><span class="title">Projects | </span>Art, but make it code. Past hacks, apps, research, etc.</p>
+    <p><span class="title">Projects | </span>Past hacks, apps, research, etc.</p>
+    <br>
+    <div class="row project-odd">
+      <div class="col-6">
+        <img style="width:100%" src="./images/projects/plinf.PNG" alt="Block Words Experiment Interface">
+        <div class="proj-desc">
+          <p> <b>Experiment Stimuli</b>: PDDL, Julia; <b>Experiment Interface</b>: AngularJS, Firebase; <b>Data
+              Analysis</b>: Python
+          </p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="proj-title">Modeling Mistakes for Theory-of-Mind &nbsp; <br><a
+            href="https://github.com/gzlin7/block-words-web" target="blockwords" class="btn" role="button">Github</a>
+        </div>
+        <div class="proj-desc">
+          <p>Experiment to study human and probabilistic-model goal inference of a sub-optimal planning agent via
+            observations of the agent's actions in a Block
+            Words game.
+            Extends <a href="https://arxiv.org/abs/2006.07532" target="SIPSPaper"> prior work</a> on boundedly-rational
+            probabilistic planners
+            and sequential goal inference via sampling. Final
+            research project for 9.660 Computational Cognitive Science. </p>
+
+          <p>
+            <b>Mentor:</b> Tan Zhi-Xuan<br>
+            <b>Teammates:</b> Arwa Alanqary, Joie Le<br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row project-even">
+      <div class="col-6" style="text-align: right;">
+        <div class="proj-title">Sprouts <br><a href="https://hot-potato-finished.herokuapp.com/login" target="sprouts"
+            class="btn" role="button">Visit Site</a></div>
+        <div class="proj-desc">
+          <p>Web app where members of the Boston community can search for and rate local
+            restaurants on their enforcement of COVID safety precautions. Sprouts provides an extensive
+            set of COVID safety-related categories that a restaurant can be rated on. Upon signup, restaurants can
+            choose which categories are applicable to their business. Businesses can also dispute unfair ratings, and
+            customers can like ratings to indicate
+            helpfulness.</p>
+          <p>
+            <b>Teammates:</b> Lisa Peng, Jenn Wang, Shushu Fang<br>
+          </p>
+        </div>
+      </div>
+      <div class="col-6 art">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/M9LBuTSme_U" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <div class="proj-desc">
+          <p> Built with <b>Node.js, Express, Vue.js, SQLite DB</b> for 6.170 Software Studio. Populated with
+            businesses from <a
+              href="https://data.cambridgema.gov/Economic-Development/Open-and-Closed-Businesses-During-Covid-19-Pandemi/9q33-qjp4"
+              target="cambridge"> Cambridge Open Data</a>.</p>
+        </div>
+
+      </div>
+    </div>
     <br>
     <div class="row project-odd">
       <div class="col-6">
@@ -201,8 +275,12 @@
             coverage of 2020
             presidential candidates to help voters make more cognizant decisions.</p>
           <p>Used Google Cloud NLP API to perform sentiment analysis on 900+ news articles scraped from 8
-            major media outlets. Used Firebase, Flask framework, and Google Charts to store, access, and visualize data
+            major media outlets. Used Firebase, Flask framework, and Google Charts to store, access, and visualize
+            data
             in an easily accessible format. Built with team for HackMIT 2019.
+          </p>
+          <p>
+            <b>Teammates:</b> Shushu Fang, Steven Qu, Sherry Xiao<br>
           </p>
         </div>
       </div>
@@ -224,7 +302,8 @@
           As President of MIT Borderline (augmented reality murals club), I rebuilt the organization's entire website
           from scratch, allowing it to be hosted for free on the mit.edu domain. This included making the site
           responsive, redesigning key pages, and reorganizing and updating years of content. Borderline had originally
-          created and hosted the site using a paid template service for convenience, which was costly, restrictive, and
+          created and hosted the site using a paid template service for convenience, which was costly, restrictive,
+          and
           hard to maintain.
           <br>
         </div>
@@ -264,11 +343,14 @@
       </div>
       <div class="col-6">
         <div class="proj-title">Concurrent Crossword &nbsp; <a href="https://github.com/gzlin7/concurrent-crossword"
-            target="crossword" class="btn" role="button">View Code</a></div>
+            target="crossword" class="btn" role="button">Github</a></div>
         <div class="proj-desc">
-          Designed and implemented a multiplayer, thread-safe competitive crossword game to handle concurrent server
-          calls as a final team project for 6.031 Software Construction. Unlike collaborative crossword games, players
-          work against each other to secure guesses and win or lose points. Playable with NYT crossword puzzles.<br>
+          <p> Designed and implemented a multiplayer, thread-safe competitive crossword game to handle concurrent server
+            calls as a final team project for 6.031 Software Construction. Unlike collaborative crossword games, players
+            work against each other to secure guesses and win or lose points. Playable with NYT crossword puzzles.</p>
+          <p>
+            <b>Teammates:</b> Andrew Churchill, Liam Conboy<br>
+          </p>
         </div>
       </div>
     </div>

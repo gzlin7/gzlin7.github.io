@@ -168,7 +168,7 @@
         </div>
         <!-- titles -->
         <div class="col-10">
-          <a href="speedrun.html">Speedrunning College</a>- advice + reflections on MIT and graduating early <br>
+          <a href="speedrun.html">Speedrunning College</a>- advice + reflections on graduating early <br>
           <!-- <a href="mturkey.html">MTurkey for Thanksgiving</a>- baby's first cognitive science experiment<br>
           <a href="mturkey.html">Paint by Numbers</a>- fun with non-photorealistic rendering<br> -->
           <a href="https://thetech.com/2020/03/05/body-text-review" target="tt">Bezos, Bodies, and Backprop</a>-
@@ -185,6 +185,30 @@
     <!-- PROJECTS -->
     <p><span class="title">Projects | </span>Past hacks, apps, research, etc.</p>
     <br>
+    <div class="row project-even">
+      <div class="col-6" style="text-align: right;">
+        <div class="proj-title">Stainglass by Numbers &nbsp; <a href="https://hot-potato-finished.herokuapp.com/login"
+            target="stainglass" class="btn disabled" role="button">Github</a></div>
+        <div class="proj-desc">
+          <p>Variant of painterly image rendering using conical brushstrokes, inspired by <a
+              href="https://dl.acm.org/doi/10.1145/97880.97902" target="haeberli">this paper on
+              abstract image representations</a>. Simulates splattering circular brushstrokes onto a canvas based on a
+            importance-sampled pixels (with color noise) from a photograph to produce a painting-like
+            rendering of the photo. Images are represented as 3D NumPy arrays.</p>
+          <p>Also implemented original extensions to create mosiac-like and color-constrained
+            renderings
+            using <a href="https://en.wikipedia.org/wiki/Difference_of_Gaussians" target="DoG">Difference
+              of Gaussians</a> filtering and <a href="https://en.wikipedia.org/wiki/CIELAB_color_space"
+              target="colorspace">CIELAB colorspace</a> conversion, respectively. Final
+            project
+            for 6.865 Digital and Computational Photography. </p>
+        </div>
+      </div>
+      <div class="col-6 ">
+        <img style="width:100%" src="./images/projects/massave.gif" alt="Massachusetts Ave rendered with cones">
+      </div>
+    </div>
+    <br>
     <div class="row project-odd">
       <div class="col-6">
         <img style="width:100%" src="./images/projects/plinf.PNG" alt="Block Words Experiment Interface">
@@ -195,7 +219,7 @@
         </div>
       </div>
       <div class="col-6">
-        <div class="proj-title">Modeling Mistakes for Theory-of-Mind &nbsp; <br><a
+        <div class="proj-title">Modeling Mistakes for Theory-of-Mind &nbsp; <a
             href="https://github.com/gzlin7/block-words-web" target="blockwords" class="btn" role="button">Github</a>
         </div>
         <div class="proj-desc">
@@ -217,8 +241,8 @@
     <br>
     <div class="row project-even">
       <div class="col-6" style="text-align: right;">
-        <div class="proj-title">Sprouts <br><a href="https://hot-potato-finished.herokuapp.com/login" target="sprouts"
-            class="btn" role="button">Visit Site</a></div>
+        <div class="proj-title">Sprouts &nbsp; <a href="https://hot-potato-finished.herokuapp.com/login"
+            target="sprouts" class="btn" role="button">Visit Site</a></div>
         <div class="proj-desc">
           <p>Web app where members of the Boston community can search for and rate local
             restaurants on their enforcement of COVID safety precautions. Sprouts provides an extensive
@@ -241,7 +265,6 @@
               href="https://data.cambridgema.gov/Economic-Development/Open-and-Closed-Businesses-During-Covid-19-Pandemi/9q33-qjp4"
               target="cambridge"> Cambridge Open Data</a>.</p>
         </div>
-
       </div>
     </div>
     <br>
@@ -268,8 +291,8 @@
     <br>
     <div class="row project-even">
       <div class="col-6" style="text-align: right;">
-        <div class="proj-title">InforME <br><a href="https://devpost.com/software/informe" target="informe" class="btn"
-            role="button">Read Devpost</a></div>
+        <div class="proj-title">InforME &nbsp; <a href="https://devpost.com/software/informe" target="informe"
+            class="btn" role="button">Read Devpost</a></div>
         <div class="proj-desc">
           <p>Serverless webapp using sentiment analysis to detect and visualize systematic biases in mainstream media
             coverage of 2020

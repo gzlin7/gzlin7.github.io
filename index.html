@@ -59,7 +59,7 @@
         <div class="name">Gloria Lin</div>
         <div style="text-align: left; padding-left:1%; font-family: 'Raleway', sans-serif;">
           Developer + Artist <br>
-          MIT SB & MEng 2021 <br>
+          MIT SB & MEng 2022 <br>
           <a href="mailto:gzlin@mit.edu" target="mail"><i class="fa fa-lg fa-envelope-square"></i></a>
           <a href="https://www.linkedin.com/in/gloriazlin/" target="li"><i class="fa fa-lg fa-linkedin-square"></i></a>
           <a href="https://github.com/gzlin7" target="gh"><i class="fa fa-lg fa-github-square"></i></a>
@@ -75,12 +75,10 @@
 
     <!-- ABOUT -->
     <p>
-      Hello! I’m Gloria, a senior at MIT studying Computer Science (Course 6-3).
-      I’m interested in the intersection of technology and design, especially human-computer interaction, artificial
-      intelligence, and software design. In the past, I’ve worked at MIT Media Lab to develop new features for an
-      AI-assisted drawing application. I've also worked at Two Sigma Investments and Amazon Web Services as a software
-      engineering intern.
-      In my free time, I like to draw and write, so I made this site!
+      Hello! I’m Gloria, a Master's student at MIT's Probabilistic Computing Project. 
+      In the past, I’ve worked at MIT CSAIL to build a platform for peer-to-peer sharing and discovery of end-user web customizations,
+      and I've worked at MIT Media Lab to develop new features for an AI-assisted drawing application. 
+      I've also been a software engineering intern at Two Sigma Investments and Amazon Web Services. In my free time, I like to draw and blog, so I made this site!
     </p>
     <a name="art"></a>
     <br>
@@ -187,7 +185,8 @@
     <br>
     <div class="row project-odd">
       <div class="col-6">
-        <img style="width:100%" src="./images/projects/plinf.PNG" alt="Block Words Experiment Interface">
+        <img style="width:49%" src="./images/projects/bw.gif" alt="Block Words Experiment">
+        <img style="width:42%" src="./images/projects/dkg.gif" alt="Doors Keys Gems Experiment">
         <div class="proj-desc">
           <p> <b>Experiment Stimuli</b>: PDDL, Julia; <b>Experiment Interface</b>: AngularJS, Firebase; <b>Data
               Analysis</b>: Python
@@ -195,22 +194,19 @@
         </div>
       </div>
       <div class="col-6">
-        <div class="proj-title">Modeling Mistakes for Theory-of-Mind &nbsp; <a
-            href="https://github.com/gzlin7/block-words-web" target="blockwords" class="btn" role="button">Github</a>
+        <div class="proj-title">Modeling Mistakes for Bayesian Theory-of-Mind 
+          <br>
+          <a href="https://github.com/gzlin7/block-words-web" target="blockwords" class="btn" role="button">Block Words</a>
+            <a href="https://github.com/gzlin7/doors-keys-gems-web" target="dkg" class="btn" role="button">Doors, Keys, & Gems</a>
         </div>
         <div class="proj-desc">
-          <p>Experiment to study human and probabilistic-model goal inference of a sub-optimal planning agent via
-            observations of the agent's actions in a Block
-            Words game.
-            Extends <a href="https://arxiv.org/abs/2006.07532" target="SIPSPaper"> prior work</a> on
-            boundedly-rational
-            probabilistic planners
-            and sequential goal inference via sampling. Final
-            research project for 9.660 Computational Cognitive Science. </p>
-
-          <p>
+          <p>Experiment to study the effect of planning mistakes on human and model goal inference of a sub-optimal planning agent via
+            observations of the agent's actions in multiple planning domains.
+            Extends <a href="https://arxiv.org/abs/2006.07532" target="SIPSPaper"> prior work</a> on modeling
+            boundedly-rational probabilistic planners and Sequential Monte Carlo methods for online goal inference. </p>
+          <p></p>
             <b>Mentor:</b> Tan Zhi-Xuan<br>
-            <b>Teammates:</b> Arwa Alanqary, Joie Le<br>
+            <b>Collaborators:</b> Arwa Alanqary, Joie Le<br>
           </p>
         </div>
       </div>
@@ -273,16 +269,14 @@
         <div class="proj-desc">
           <p>Variant of painterly image rendering using conical brushstrokes, inspired by <a
               href="https://dl.acm.org/doi/10.1145/97880.97902" target="haeberli">this paper on
-              abstract image representations</a>. Simulates placing circular brushstrokes onto a canvas based on
+              abstract image representations</a>. Simulates placing brushstrokes onto a canvas based on
             importance-sampled pixels from a photograph (with color noise) to produce a stainglass-like
             rendering of the photo. Images are represented as 3D NumPy arrays.</p>
           <p>Also implemented original extensions to create mosiac-like and color-constrained
             renderings
             using <a href="https://en.wikipedia.org/wiki/Difference_of_Gaussians" target="DoG">Difference
               of Gaussians</a> filtering and <a href="https://en.wikipedia.org/wiki/CIELAB_color_space"
-              target="colorspace">CIELAB colorspace</a> conversion, respectively. Final
-            project
-            for 6.865 Digital and Computational Photography. </p>
+              target="colorspace">CIELAB colorspace</a> conversion, respectively.</p>
         </div>
       </div>
       <div class="col-6 ">
@@ -306,10 +300,9 @@
         <div class="proj-title">Wildcard Marketplace &nbsp; <a href="https://wildcard-marketplace.herokuapp.com/"
             target="wcMarketplace" class="btn" role="button">Visit Site</a></div>
         <div class="proj-desc">
-          <p>Web platform for sharing and discovering website adapters created using the <a
-              href="https://geoffreylitt.github.io/wildcard/#/README">Wildcard chrome extension</a>. Integrated with
-            Wildcard for one-click adapter upload
-            and install flow from the chrome extension. Built with Node.js, Vue.js, Firebase for CSAIL Software Design
+          <p>Platform for seamless sharing and discovery of website adapters created using the <a
+              href="https://geoffreylitt.github.io/wildcard/#/README">Wildcard chrome extension</a>, empowering anyone to build browser extensions and modify websites to meet their own specific needs, 
+              and share those customizations with others. Marketplace is integrated with Wildcard for one-click adapter upload and install flow from the chrome extension. Built with Node.js, Vue.js, Firebase for CSAIL Software Design
             Group UROP.</p>
         </div>
       </div>

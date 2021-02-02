@@ -211,7 +211,7 @@ a:hover {
   .proj-desc {
     font-family: 'Roboto', sans-serif;
     font-size: max(20px, 1vw);
-    text-align: left;
+    text-align: justify !important;
   }
 
   nav {

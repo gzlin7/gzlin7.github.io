@@ -149,6 +149,30 @@ a:hover {
     text-align: left !important;
   }
 
+  #toc_container {
+      background: #f9f9f9 none repeat scroll 0 0;
+      border: 1px solid #aaa;
+      display: table;
+      margin-bottom: 1em;
+      padding: 20px;
+      width: auto;
+      font-size: max(16px, 1vw);
+      text-align: left;
+  }
+
+  .toc_title {
+      font-weight: 700;
+      text-align: center;
+  }
+
+  ul.toc_list {
+    padding: 0%;
+  }
+
+  #toc_container li, #toc_container ul, #toc_container ul li{
+      list-style: outside none none !important;
+  }
+
   @media only screen and (max-width: 765px) {
     .container-fluid {
       max-width: 90%;

@@ -75,7 +75,7 @@
 
     <!-- ABOUT -->
     <p style="text-align: justify;">
-      <span style="color: #FA7268"> hello! </span> I’m Gloria, a recent graduate and incoming software engineer at Two
+      <a href="#" class="pophello" id="gloria"> hello!</a> I’m Gloria, a recent graduate and incoming software engineer at Two
       Sigma. In the past,
       I’ve worked at MIT Probabilistic Computing Project to develop Bayesian active learning policies for inferring
       hidden structure in data, MIT CSAIL to build a platform for peer-to-peer sharing of end-user web
@@ -96,10 +96,10 @@
           MIT <br> Drawn <br> Together
         </div>
       </div>
-      <div class="col-4 art" id="liminalSpace">
-        <img alt="Liminal Space Zine" src="./images/art/liminal_space.gif" />
+      <div class="col-4 art" id="bde">
+        <img alt="Big Dijkstra Energy" src="./images/art/BDE.PNG">
         <div class="art-titles">
-          Liminal <br> Space
+          Big <br> Dijkstra <br> Energy
         </div>
       </div>
       <div class="col-4 art" id="craneDancer">
@@ -111,10 +111,10 @@
     </div>
 
     <div class="row">
-      <div class="col-4 art" id="bde">
-        <img alt="Big Dijkstra Energy" src="./images/art/BDE.PNG">
+      <div class="col-4 art" id="liminalSpace">
+        <img alt="Liminal Space Zine" src="./images/art/content/Liminal_1.PNG" />
         <div class="art-titles">
-          Big <br> Dijkstra <br> Energy
+          Liminal Space <br> (zine)
         </div>
       </div>
       <div class="col-4 art" id="koiQueen">
@@ -132,10 +132,10 @@
     </div>
 
     <div class="row">
-      <div class="col-4 art" id="traditional">
-        <img alt="Traditional" src="./images/art/ramp.jpg" />
+      <div class="col-4 art" id="dormspam">
+        <img alt="Dormspam Comic: Techxodus" src="./images/art/techxodus.png">
         <div class="art-titles">
-          Traditional <br> Art
+          Dormspam <br> Comic
         </div>
       </div>
       <div class="col-4 art" id="boston">
@@ -159,10 +159,10 @@
           Fish out of Water <br> (Kresge Tents)
         </div>
       </div>
-      <div class="col-4 art" id="dormspam">
-        <img alt="Dormspam Comic: Techxodus" src="./images/art/techxodus.png">
+      <div class="col-4 art" id="traditional">
+        <img alt="Traditional" src="./images/art/ramp.jpg" />
         <div class="art-titles">
-          Dormspam <br> Comic
+          Traditional <br> Art
         </div>
       </div>
       <div class="col-4 art" id="shengNu">
@@ -198,15 +198,15 @@
             <td> <a href="iap.html">IAP Projects </a> </td>
             <td>pokerbots, paper submission, pickup-line tournament, puzzlehunt, painting</td>
           </tr>
-          <!-- <tr>
+          <tr>
             <th scope="row">Feb 2021</th>
             <td><a href="valentines.html">Valentine's Day</a></td>
-            <td>bin packing is NP-complete, but what about unpacking? reflections one year later. </td>
-          </tr> -->
+            <td>bin packing is NP-complete, but what about unpacking? reflections one year later </td>
+          </tr>
           <tr>
             <th scope="row">Dec 2020</th>
             <td><a href="speedrun.html">Speedrunning College</a></td>
-            <td>advice and reflections on graduating early. this blog, like me, is a work-in-progress.</td>
+            <td>advice and reflections on graduating early</td>
           </tr>
           <tr>
             <th scope="row">Mar 2020</th>
@@ -252,7 +252,7 @@
             Extends <a href="https://papers.nips.cc/paper/2020/file/df3aebc649f9e3b674eeb790a4da224e-Paper.pdf"
               target="SIPSPaper"> prior work</a> on modeling
             boundedly-rational probabilistic planners and Sequential Monte Carlo methods for online goal inference.
-            Accepted for talk at CogSci 2021. </p>
+            Accepted for talk at CogSci 2021. Read more about the project <a href="iap.html#cogsci">on my IAP blog</a>. </p>
           <p></p>
           <b>Mentor:</b> Tan Zhi-Xuan<br>
           <b>Collaborators:</b> Arwa Alanqary, Joie Le<br>
@@ -510,6 +510,12 @@
 
       popIntro(this);
     });
+
+    $('.pophello').on('click', function () {
+      let src = $(this).find('img').attr('src');
+      popIntro(this);
+    });
+
   </script>
 
 </body>

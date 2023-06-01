@@ -1,0 +1,36 @@
+.project-odd {
+  padding: 2%;
+}
+
+.project-even {
+  background-color: #ffe3e3;
+  padding: 2%;
+}
+
+.proj-title {
+  font-size: 2.5vw;
+  color: #fa7268;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+}
+
+.btn {
+  color: #fa7268;
+  font-weight: bold;
+  font-size: max(20px, 1.4vw);
+}
+
+iframe {
+  width: 100%;
+  height: 75%;
+}
+
+.proj-desc {
+  p {
+    font-size: max(20px, 1.4vw);
+    text-align: justify !important;
+  }
+  font-size: max(20px, 1.4vw);
+  text-align: justify !important;
+}

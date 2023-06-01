@@ -1,0 +1,82 @@
+$primary-color: #fa7268;
+
+@import 'animate.css';
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vw;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  color: black;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #fa7268;
+  text-decoration: None;
+}
+
+a:hover {
+  transition-duration: 0.7s;
+  color: #34d4ae;
+}
+
+p {
+  text-align: left;
+}
+
+@media only screen and (max-width: 765px) {
+  .container-fluid {
+    max-width: 90%;
+  }
+
+  .btn {
+    padding: 5px;
+  }
+
+  .bio,
+  body {
+    font-size: large;
+  }
+
+  .title {
+    font-size: x-large;
+  }
+
+  .proj-title {
+    font-size: large;
+  }
+
+  .name {
+    font-size: xx-large;
+  }
+
+  .nav-link {
+    font-size: large;
+    font-weight: bold;
+    margin: 2px;
+  }
+
+  .art {
+    padding: 0;
+  }
+
+  .proj-desc {
+    display: none;
+  }
+
+  .modal-dialog {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .modal-content {
+    width: calc(90vw);
+  }
+}

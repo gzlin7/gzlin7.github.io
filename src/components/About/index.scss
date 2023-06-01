@@ -1,0 +1,36 @@
+.description {
+  text-align: left;
+  padding-left: 1%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bio {
+  padding-left: 5%;
+}
+
+.hello {
+  padding: 0px;
+}
+
+.hello-gif {
+  width: 100%;
+  border-radius: 400px;
+}
+
+.name {
+  padding-top: 22px;
+  font-size: 8vw;
+  color: #fa7268;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  line-height: 7.5vw;
+}
+
+.fa-icon {
+  color: #fa7268;
+  &:hover {
+    transition-duration: 0.7s;
+    color: #34d4ae;
+  }
+  padding-right: 1vw;
+}

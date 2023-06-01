@@ -1,0 +1,53 @@
+.art {
+  padding: 10px;
+  position: relative;
+}
+
+.art img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.art:hover .art-titles {
+  display: block;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.art:hover img {
+  opacity: 0.1;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.art-desc {
+  font-family: 'Roboto', sans-serif !important;
+  text-align: justify !important;
+  font-size: max(20px, 1.4vw);
+  p {
+    font-family: 'Roboto', sans-serif !important;
+    text-align: justify !important;
+    font-size: max(20px, 1.4vw);
+  }
+}
+
+.art-titles {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 2.5vw;
+  color: #fa7268;
+  position: absolute;
+  top: 30%;
+  left: 5px;
+  margin: auto;
+  width: 98%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  display: none;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 2.5vw;
+  color: #fa7268;
+}

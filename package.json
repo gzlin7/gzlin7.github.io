@@ -1,7 +1,8 @@
 {
   "name": "gloria-site",
   "version": "0.1.0",
-  "homepage": "https://gzlin7.github.io/react-gh-pages",
+  "private": true,
+  "homepage": "https://gzlin7.github.io",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
